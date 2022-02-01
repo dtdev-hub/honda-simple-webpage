@@ -57,8 +57,25 @@
             }
         }
         .vehicle-product {
+            color: $color-dark-blue-200;
             .vehicle-img img:last-child {
                 display: none;
+            }
+            h2 {
+                font-size: $font-size-2;
+                font-weight: $font-weight-bold;
+                margin-bottom: $mg-1;
+            }
+            .vehicle-info {
+                margin-bottom: $mg-2;
+                h3 {
+                    font-weight: $font-weight-normal;
+                    font-size: $font-size-3;
+                }
+                p {
+                    font-size: $font-size-1;
+                    margin-bottom: $mg-1;
+                }
             }
         }
     }

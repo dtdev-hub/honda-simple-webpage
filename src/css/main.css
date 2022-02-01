@@ -7,6 +7,39 @@ html {
   font-size: 12px;
 }
 
+.btn-vehicle {
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+  background-color: #2198dc;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-vehicle:hover {
+  background-color: #fff;
+  color: #007cc3;
+}
+
+.btn-vehicle-active {
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #007cc3;
+  font-weight: bold;
+  padding: 6px 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.btn-vehicle-active:hover {
+  background-color: #2198dc;
+  color: #fff;
+}
+
 .navbar {
   padding: 0;
 }
@@ -97,7 +130,31 @@ html {
   font-weight: normal;
 }
 
+#vehicles #vehicle-list .vehicle-product {
+  color: #00324f;
+}
+
 #vehicles #vehicle-list .vehicle-product .vehicle-img img:last-child {
   display: none;
+}
+
+#vehicles #vehicle-list .vehicle-product h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#vehicles #vehicle-list .vehicle-product .vehicle-info {
+  margin-bottom: 20px;
+}
+
+#vehicles #vehicle-list .vehicle-product .vehicle-info h3 {
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+#vehicles #vehicle-list .vehicle-product .vehicle-info p {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */
