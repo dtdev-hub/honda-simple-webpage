@@ -58,6 +58,13 @@
         }
         .vehicle-product {
             color: $color-dark-blue-200;
+            margin-bottom: $mg-3;
+            &:hover > .vehicle-img img:first-child {
+                display: none;
+            }
+            &:hover > .vehicle-img img:last-child {
+                display: block;
+            }
             .vehicle-img img:last-child {
                 display: none;
             }

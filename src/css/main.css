@@ -40,6 +40,66 @@ html {
   color: #fff;
 }
 
+#img-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehicle-product:hover > #img-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c4c5c), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#3c4c5c, #f5f5f5, #f5f5f5);
+}
+
+#img-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehicle-product:hover > #img-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5e5e5e), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#5e5e5e, #f5f5f5, #f5f5f5);
+}
+
+#img-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehicle-product:hover > #img-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#14409a), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#14409a, #f5f5f5, #f5f5f5);
+}
+
+#img-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehicle-product:hover > #img-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c0bab5), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#c0bab5, #f5f5f5, #f5f5f5);
+}
+
+#img-5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehicle-product:hover > #img-5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c5c5c), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#5c5c5c, #f5f5f5, #f5f5f5);
+}
+
+#img-6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
+}
+
+.vehicle-product:hover > #img-6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#33569c), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#33569c, #f5f5f5, #f5f5f5);
+}
+
 .navbar {
   padding: 0;
 }
@@ -132,6 +192,15 @@ html {
 
 #vehicles #vehicle-list .vehicle-product {
   color: #00324f;
+  margin-bottom: 30px;
+}
+
+#vehicles #vehicle-list .vehicle-product:hover > .vehicle-img img:first-child {
+  display: none;
+}
+
+#vehicles #vehicle-list .vehicle-product:hover > .vehicle-img img:last-child {
+  display: block;
 }
 
 #vehicles #vehicle-list .vehicle-product .vehicle-img img:last-child {
