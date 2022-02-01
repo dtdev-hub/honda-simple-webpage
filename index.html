@@ -53,19 +53,19 @@
                         <nav class="vehicle-nav">
                             <ul>
                                 <li class="active">
-                                    <a href="#">CARS</a>
+                                    <a href="#" id="cars-nav">CARS</a>
                                 </li>
                                 <li>
-                                    <a href="#">CROSSOVER & SUV</a>
+                                    <a href="#" id="suvs-nav">CROSSOVER & SUV</a>
                                 </li>
                                 <li>
-                                    <a href="#">MINIVAN & TRUCK</a>
+                                    <a href="#" id="minivan-nav">MINIVAN & TRUCK</a>
                                 </li>
                                 <li>
-                                    <a href="#">ENVIRONMENTAL</a>
+                                    <a href="#" id="environmental-nav">ENVIRONMENTAL</a>
                                 </li>
                                 <li>
-                                    <a href="#">FUTURE</a>
+                                    <a href="#" id="future-nav">FUTURE</a>
                                 </li>
                             </ul>
                         </nav>
@@ -73,7 +73,7 @@
                 </div>
                 <div id="vehicle-list">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12" id="cars">
                             <hr size="2" class="line">
                             <div class="vehicle-title text-center">
                                 <h1 class="d-inline">
@@ -254,13 +254,11 @@
                         <!-- VEHICLE PRODUCT END-->
 
                         <!-- NEW COL-12 -->
-                        <div class="col-12">
+                        <div class="col-12" id="suvs">
                             <hr size="2" class="line">
                             <div class="vehicle-title text-center">
                                 <h1 class="d-inline">
-                                    CARS
-                                    <i class="fa fa-circle"></i>
-                                    <span>Sedans</span>
+                                    CROSSOVER & SUV
                                 </h1>
                             </div>
                         </div>
@@ -435,13 +433,11 @@
                         <!-- VEHICLE PRODUCT END-->
 
                         <!-- NEW COL-12 -->
-                        <div class="col-12">
+                        <div class="col-12" id="minivans">
                             <hr size="2" class="line">
                             <div class="vehicle-title text-center">
                                 <h1 class="d-inline">
-                                    CARS
-                                    <i class="fa fa-circle"></i>
-                                    <span>Sedans</span>
+                                    MINIVAN & TRUCK
                                 </h1>
                             </div>
                         </div>
@@ -631,6 +627,22 @@
     <script type="text/javascript">
         $('#vehicle-list').mCustomScrollbar({
             theme: 'dark'
+        });
+        function move(value) {
+            $('#vehicle-list').mCustomScrollbar("scrollTo", value, {
+                scrollEasing: 'easeOut',
+            })
+        }
+        $('.vehicle-nav ul li a').click(function () {
+            if ($(this).attr('id') === "cars-nav") {
+                move("#cars");
+            }
+            if ($(this).attr('id') === "suvs-nav") {
+                move("#suvs");
+            }
+            if ($(this).attr('id') === "minivan-nav") {
+                move("#minivans");
+            }
         })
     </script>
 
