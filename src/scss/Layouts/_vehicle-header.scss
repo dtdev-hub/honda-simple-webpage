@@ -56,5 +56,10 @@
                 }
             }
         }
+        .vehicle-product {
+            .vehicle-img img:last-child {
+                display: none;
+            }
+        }
     }
 }

@@ -96,4 +96,8 @@ html {
 #vehicles #vehicle-list .vehicle-title h1 span {
   font-weight: normal;
 }
+
+#vehicles #vehicle-list .vehicle-product .vehicle-img img:last-child {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
