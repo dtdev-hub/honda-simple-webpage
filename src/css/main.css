@@ -100,15 +100,21 @@ html {
   background: linear-gradient(#33569c, #f5f5f5, #f5f5f5);
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .navbar {
   padding: 0;
 }
 
-#header {
+#navbar {
   background-color: #007cc3;
 }
 
-#header a {
+#navbar a {
   color: #fff;
   padding: 0 25px;
   border-left: 1px solid #4f91ca;
@@ -116,7 +122,7 @@ html {
   font-size: 1.4rem;
 }
 
-#header .navbar > a:first-child {
+#navbar a:first-child {
   padding: 0 25px;
 }
 
@@ -168,6 +174,8 @@ html {
 #vehicles #vehicle-list {
   background-color: #f5f5f5;
   padding: 50px;
+  padding-bottom: 100px;
+  max-height: 700px;
 }
 
 #vehicles #vehicle-list .vehicle-title h1 {

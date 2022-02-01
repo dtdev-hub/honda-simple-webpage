@@ -37,6 +37,8 @@
     #vehicle-list {
         background-color: $color-grey;
         padding: $pd-6;
+        padding-bottom: $pd-6 * 2;
+        max-height: 700px;
         .vehicle-title {
             h1 {
                 background-color: $color-grey;
