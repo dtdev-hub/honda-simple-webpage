@@ -1,0 +1,34 @@
+#vehicles {
+    background-color: $color-blue-overlay;
+    #vehicle-content {
+        .vehicle-nav {
+            background-color: $color-white;
+            text-align: center;
+            padding: $pd-3 0;
+            ul {
+                list-style: none;
+                margin: 0;
+                li {
+                    display: inline;
+                    a {
+                        padding: $pd-1 $pd-4;
+                        font-weight: $font-weight-bold;
+                        color: $color-dark-blue-200;
+                        border-right: $border-2;
+                        font-size: $font-size-1;
+                        &:hover {
+                            color: $color-blue-200;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                li.active {
+                    a {
+                        color: $color-blue-200;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
