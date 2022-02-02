@@ -104,6 +104,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -124,6 +125,11 @@ html {
 
 #navbar a:first-child {
   padding: 0 25px;
+}
+
+#navbar a.active {
+  background-color: #fff;
+  color: #007cc3;
 }
 
 .no-border {
@@ -277,5 +283,13 @@ html {
 #vehicles #vehicle-close p {
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+.hide-vehicles {
+  display: none;
+}
+
+.show-vehicle {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
