@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./src/css/bootstrap.css">
     <link rel="stylesheet" href="./src/css/font-awesome.css">
     <link rel="stylesheet" href="./src/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./src/css/animate.css">
 
     <link rel="stylesheet" href="./src/css/main.css">
 </head>
@@ -46,11 +47,11 @@
                 </div>
             </div>
         </nav>
-        <section id="vehicles" class="hide-vehicles">
+        <section id="vehicles" class="hide-vehicle">
             <section class="container-fluid container--config" id="vehicle-content">
                 <div class="row ">
                     <div class="col">
-                        <nav class="vehicle-nav">
+                        <nav class="vehicle-nav animated">
                             <ul>
                                 <li class="active">
                                     <a href="#" id="cars-nav">CARS</a>
@@ -77,7 +78,7 @@
                     </div>
                     <p class="mb-0">CLOSE</p>
                 </div>
-                <div id="vehicle-list">
+                <div id="vehicle-list" class="animated">
                     <div class="row">
                         <div class="col-12" id="cars">
                             <hr size="2" class="line">
@@ -656,21 +657,37 @@
                 count = $(this).attr('id');
                 $(this).addClass('active');
                 if (count === "vehicles-link") {
-                    $("#vehicles").removeClass('hide-vehicles');
+                    $("#vehicles").removeClass('hide-vehicle');
+                    $(".vehicle-nav").addClass('fadeInDown');
                 }
             } else {
                 if (count === $(this).attr('id')) {
                     $(this).removeClass('active');
                     count = "";
-                    $("#vehicles").addClass('hide-vehicles');
+                    $(".vehicle-nav").addClass('fadeOutUp');
+                    $("#vehicle-list").addClass('fadeOutDown');
+
+                    setTimeout(() => {
+                        $("#vehicles").addClass('hide-vehicle');
+                        $(".vehicle-nav").removeClass('fadeOutUp');
+                        $("#vehicle-list").removeClass('fadeOutDown');
+                    }, 300);
                 } else {
                     $('#navbar > a').removeClass('active');
                     $(this).addClass('active');
                     count = $(this).attr('id');
                     if (count != "vehicles-link") {
-                        $("#vehicles").addClass('hide-vehicles');
+                        $(".vehicle-nav").addClass('fadeOutUp');
+
+                        setTimeout(() => {
+                            $("#vehicles").addClass('hide-vehicle');
+                            $(".vehicle-nav").removeClass('fadeOutUp');
+                            $("#vehicle-list").removeClass('fadeOutDown');
+                        }, 300);
                     } else {
-                        $("#vehicles").removeClass('hide-vehicles');
+                        $("#vehicles").removeClass('hide-vehicle');
+                        $(".vehicle-nav").addClass('fadeInDown');
+                        $("#vehicle-list").addClass('fadeInUp');
                     }
                 }
             }
