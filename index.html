@@ -679,6 +679,7 @@
                     count = $(this).attr('id');
                     if (count != "vehicles-link") {
                         $(".vehicle-nav").addClass('fadeOutUp');
+                        $("#vehicle-list").addClass('fadeOutDown');
 
                         setTimeout(() => {
                             $("#vehicles").addClass('hide-vehicle');
@@ -692,6 +693,18 @@
                     }
                 }
             }
+        })
+        $('#vehicle-close').click(function () {
+            $(".vehicle-nav").addClass('fadeOutUp');
+            $("#vehicle-list").addClass('fadeOutDown');
+
+            setTimeout(() => {
+                $("#vehicles").addClass('hide-vehicle');
+                $(".vehicle-nav").removeClass('fadeOutUp');
+                $("#vehicle-list").removeClass('fadeOutDown');
+            }, 300);
+            $('#navbar-nav a').removeClass('active');
+            count = "";
         })
     </script>
 
