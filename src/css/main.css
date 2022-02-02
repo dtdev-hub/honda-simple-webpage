@@ -151,6 +151,11 @@ html {
   background: linear-gradient(#3c4c5c, #f5f5f5, #f5f5f5);
 }
 
+.delay-1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
 #img-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
   background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
@@ -159,6 +164,11 @@ html {
 .vehicle-product:hover > #img-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#5e5e5e), color-stop(#f5f5f5), to(#f5f5f5));
   background: linear-gradient(#5e5e5e, #f5f5f5, #f5f5f5);
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 #img-3 {
@@ -171,6 +181,11 @@ html {
   background: linear-gradient(#14409a, #f5f5f5, #f5f5f5);
 }
 
+.delay-3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
 #img-4 {
   background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
   background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
@@ -179,6 +194,11 @@ html {
 .vehicle-product:hover > #img-4 {
   background: -webkit-gradient(linear, left top, left bottom, from(#c0bab5), color-stop(#f5f5f5), to(#f5f5f5));
   background: linear-gradient(#c0bab5, #f5f5f5, #f5f5f5);
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 #img-5 {
@@ -191,6 +211,11 @@ html {
   background: linear-gradient(#5c5c5c, #f5f5f5, #f5f5f5);
 }
 
+.delay-5 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 #img-6 {
   background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
   background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
@@ -199,6 +224,11 @@ html {
 .vehicle-product:hover > #img-6 {
   background: -webkit-gradient(linear, left top, left bottom, from(#33569c), color-stop(#f5f5f5), to(#f5f5f5));
   background: linear-gradient(#33569c, #f5f5f5, #f5f5f5);
+}
+
+.delay-6 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 #header {
