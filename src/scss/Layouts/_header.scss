@@ -11,19 +11,22 @@
     background-color: $color-blue-100;
     a {
         color: $color-white;
-        padding: 0 $pd-4;
+        padding: $pd-3 $pd-4;
         border-left: $border-1;
         border-right: $border-1;
         font-size: 1.4rem;
     }
+    .nav-item .nav-link {
+        padding: $pd-3 $pd-4;
+    }
     a:first-child {
         padding: 0 $pd-4;
-    }
-    a.active {
-        background-color: $color-white;
-        color: $color-blue-100;
     }
 }
 .no-border {
     border: 0 !important;
+}
+#navbar > .active {
+    color: $color-blue-200 !important;
+    background-color: $color-white !important;
 }

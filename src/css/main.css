@@ -248,23 +248,27 @@ html {
 
 #navbar a {
   color: #fff;
-  padding: 0 25px;
+  padding: 20px 25px;
   border-left: 1px solid #4f91ca;
   border-right: 1px solid #4f91ca;
   font-size: 1.4rem;
+}
+
+#navbar .nav-item .nav-link {
+  padding: 20px 25px;
 }
 
 #navbar a:first-child {
   padding: 0 25px;
 }
 
-#navbar a.active {
-  background-color: #fff;
-  color: #007cc3;
-}
-
 .no-border {
   border: 0 !important;
+}
+
+#navbar > .active {
+  color: #2198dc !important;
+  background-color: #fff !important;
 }
 
 .container--config {
