@@ -702,7 +702,7 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #navbar .navbar-collapse {
     border-top: 0.15rem solid #eaeaea;
   }
@@ -774,6 +774,36 @@ html {
   #search-area-xs input::placeholder {
     font-size: 1.4rem;
     color: #fff;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar a {
+    padding: 15px 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar .nav-item .nav-link {
+    padding: 15px 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar a:first-child {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #search-area {
+    padding: 15px 6px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #search-area input {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=main.css.map */

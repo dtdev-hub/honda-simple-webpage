@@ -1,0 +1,27 @@
+#navbar {
+    a {
+        @media screen and (max-width: 992px) {
+            padding: $pd-2 $pd-2;
+        }
+    }
+    .nav-item .nav-link {
+        @media screen and (max-width: 992px) {
+            padding: $pd-2 $pd-2;
+        }
+    }
+    a:first-child {
+        @media screen and (max-width: 992px) {
+            padding: 0;
+        }
+    }
+}
+#search-area {
+    @media screen and(max-width: 992px) {
+        padding: $pd-2 $pd-1;
+    }
+    input {
+        @media screen and(max-width: 992px) {
+            width: 80%;
+        }
+    }
+}
