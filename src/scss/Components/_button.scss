@@ -22,4 +22,9 @@
 .btn-search {
     @include button($color-blue-200, transparent, $color-blue-100, $pd-1 $pd-5, $color-blue-200, $color-white);
     margin-top: $mg-2 * (-1);
+    @media screen and (max-width: 576px) {
+        @include button($color-white, transparent, $color-white, $pd-1 $pd-2, $color-white, $color-blue-200);
+        margin-top: 0;
+        border-radius: 5px;
+    }
 }
