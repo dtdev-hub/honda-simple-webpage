@@ -15,6 +15,9 @@
         border-left: $border-1;
         border-right: $border-1;
         font-size: 1.4rem;
+        &:hover {
+            text-decoration: none;
+        }
     }
     .nav-item .nav-link {
         padding: $pd-3 $pd-4;
