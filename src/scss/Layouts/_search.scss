@@ -22,5 +22,6 @@
     }
     &::before {
         @include arrow(unset, 1%);
+        border-bottom-color: $color-grey;
     }
 }
