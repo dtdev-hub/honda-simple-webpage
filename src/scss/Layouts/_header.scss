@@ -29,6 +29,9 @@
         padding: $pd-4;
         box-shadow: $box-shadow;
         border: none;
+        &::before {
+            @include arrow(unset, 15%);
+        }
         .dropdown-item {
             &:hover {
                 background: transparent;
