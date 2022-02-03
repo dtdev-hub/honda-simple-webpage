@@ -9,6 +9,19 @@
             padding: $pd-1 $pd-2;
         }
     }
+    .navbar-collapse {
+        @media screen and (max-width: 576px) {
+            border-top: $border-2;
+        }
+    }
+    .discover-menu {
+        &::before {
+            @media screen and (max-width: 576px) {
+                @include arrow(7%, unset);
+                top: 4.5rem;
+            }
+        }
+    }
 }
 #search-area-xs {
     &:before {

@@ -158,7 +158,7 @@ html {
   color: #fff;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .btn-search {
     border: 2px solid #fff;
     border-radius: 40px;
@@ -616,6 +616,26 @@ html {
 }
 
 @media screen and (max-width: 576px) {
+  #navbar .navbar-collapse {
+    border-top: 0.15rem solid #eaeaea;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #navbar .discover-menu::before {
+    content: "";
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 7%;
+    right: unset;
+    top: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
   #search-area-xs:before {
     border-bottom-width: 0;
   }
@@ -652,6 +672,93 @@ html {
 }
 
 @media screen and (max-width: 576px) {
+  #search-area-xs input::-webkit-input-placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  #search-area-xs input:-ms-input-placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  #search-area-xs input::-ms-input-placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  #search-area-xs input::placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar a {
+    padding: 6px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar a:first-child {
+    padding: 6px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar .navbar-collapse {
+    border-top: 0.15rem solid #eaeaea;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar .discover-menu::before {
+    content: "";
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 7%;
+    right: unset;
+    top: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs:before {
+    border-bottom-width: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs {
+    background-color: #007cc3;
+    padding: 6px 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs i {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs input {
+    width: 60%;
+    height: 2rem;
+    border: 2px solid #fff;
+    height: 2.5rem;
+    border-radius: 5px;
+    height: 3.5rem;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #search-area-xs input::-webkit-input-placeholder {
     font-size: 1.4rem;
     color: #fff;

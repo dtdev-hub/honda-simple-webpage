@@ -1,0 +1,63 @@
+#navbar {
+    a {
+        @media screen and (max-width: 768px) {
+            padding: $pd-1 $pd-2;
+        }
+    }
+    a:first-child {
+        @media screen and (max-width: 768px) {
+            padding: $pd-1 $pd-2;
+        }
+    }
+    .navbar-collapse {
+        @media screen and (max-width: 768px) {
+            border-top: $border-2;
+        }
+    }
+    .discover-menu {
+        &::before {
+            @media screen and (max-width: 768px) {
+                @include arrow(7%, unset);
+                top: 4.5rem;
+            }
+        }
+    }
+}
+#search-area-xs {
+    &:before {
+        @media screen and(max-width: 768px) {
+            border-bottom-width: 0;
+        }
+    }
+    @media screen and(max-width: 768px) {
+        background-color: $color-blue-100;
+        padding: $pd-1 $pd-1;
+    }
+    i {
+        @media screen and(max-width: 768px) {
+            color: $color-white;
+            font-size: $font-size-1;
+        }
+    }
+    input {
+        @media screen and(max-width: 768px) {
+            width: 60%;
+            height: 2rem;
+            border: 2px solid $color-white;
+            height: 2.5rem;
+            border-radius: 5px;
+            height: 3.5rem;
+            padding-bottom: $pd-1;
+            padding-left: $pd-1;
+            font-size: $font-size-1;
+            color: $color-white;
+            background-color: transparent;
+        }
+        &::placeholder {
+            @media screen and(max-width: 768px) {
+                font-size: $font-size-1;
+                color: $color-white;
+            }
+        }
+    }
+}
