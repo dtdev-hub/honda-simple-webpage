@@ -690,6 +690,26 @@ html {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .container--config {
+    padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vehicles #vehicle-content .vehicle-nav ul li {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vehicles #vehicle-content .vehicle-nav ul li a {
+    padding: 6px 15px;
+    border: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #navbar a {
     padding: 6px 15px;
@@ -802,6 +822,24 @@ html {
 }
 
 @media screen and (max-width: 992px) {
+  #search-area input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #search-area {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #search-area input {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
   #search-area input {
     width: 80%;
   }
