@@ -9,3 +9,12 @@
         animation-delay: 0.2s * $stt;
     }
 }
+@for $stt from 1 through 4 {
+    #swiper-slider {
+        .slide-#{$stt} {
+            background: url("../img/banner-#{$stt}.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}

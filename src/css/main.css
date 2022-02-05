@@ -267,10 +267,36 @@ html {
           animation-delay: 1.2s;
 }
 
+#swiper-slider .slide-1 {
+  background: url("../img/banner-1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#swiper-slider .slide-2 {
+  background: url("../img/banner-2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#swiper-slider .slide-3 {
+  background: url("../img/banner-3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#swiper-slider .slide-4 {
+  background: url("../img/banner-4.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
 #header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
+  width: 100%;
   padding: 0;
 }
 
@@ -601,6 +627,48 @@ html {
   left: unset;
   right: 1%;
   border-bottom-color: #f5f5f5;
+}
+
+#swiper-slider {
+  height: 800px;
+  margin-top: 60px;
+  background-color: #00324f;
+}
+
+#swiper-slider .swiper-container {
+  height: 500px;
+}
+
+#swiper-slider .swiper-container .swiper-wrapper {
+  height: 93%;
+}
+
+#swiper-slider .swiper-container .swiper-wrapper .swiper-slide {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+#swiper-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #007cc3;
+}
+
+#swiper-slider .swiper-button-next,
+#swiper-slider .swiper-button-prev {
+  top: 45%;
+  background-color: #ffffffe6;
+  padding: 50px 30px;
+  border-radius: 0.9rem;
+}
+
+#swiper-slider .swiper-button-prev {
+  left: -0.8rem;
+}
+
+#swiper-slider .swiper-button-next {
+  right: -0.8rem;
 }
 
 @media screen and (max-width: 576px) {

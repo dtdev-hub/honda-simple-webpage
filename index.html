@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/font-awesome.css">
     <link rel="stylesheet" href="./src/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="./src/css/animate.css">
+    <link rel="stylesheet" href="./src/css/swiper.min.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./src/css/main.css">
@@ -691,14 +692,62 @@
             <button class="btn btn-search">SEARCH</button>
         </section>
     </header>
+    <section id="swiper-slider">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide-1">
+                </div>
+                <div class="swiper-slide slide-2">
+                </div>
+                <div class="swiper-slide slide-3">
+                </div>
+                <div class="swiper-slide slide-4">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
 
     <!-- LIBRARIES -->
     <script type="text/javascript" src="./src/js/jquery.min.js"></script>
     <script type="text/javascript" src="./src/js/popper.min.js"></script>
     <script type="text/javascript" src="./src/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./src/js/jquery.mCustomScrollbar.js"></script>
+    <script src="./src/js/swiper.min.js"></script>
+
     <script type="text/javascript">
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            centeredSlides: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+
         $('#vehicle-list').mCustomScrollbar({
             theme: 'dark'
         });
