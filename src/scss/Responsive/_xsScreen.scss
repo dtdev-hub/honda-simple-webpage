@@ -84,3 +84,8 @@
         }
     }
 }
+#swiper-slider {
+    @media screen and (max-width: 576px) {
+        margin-top: $mg-5;
+    }
+}

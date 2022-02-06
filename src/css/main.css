@@ -289,10 +289,42 @@ html {
   background-position: center center;
 }
 
+@media screen and (max-width: 768px) {
+  #swiper-slider .slide-1 {
+    background: url("../img/banner-1-xs.jpg");
+    background-size: cover;
+    background-position: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #swiper-slider .slide-1 {
+    background: url("../img/banner-1-xs.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 #swiper-slider .slide-2 {
   background: url("../img/banner-2.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  #swiper-slider .slide-2 {
+    background: url("../img/banner-2-xs.jpg");
+    background-size: cover;
+    background-position: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #swiper-slider .slide-2 {
+    background: url("../img/banner-2-xs.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 #swiper-slider .slide-3 {
@@ -301,10 +333,42 @@ html {
   background-position: center center;
 }
 
+@media screen and (max-width: 768px) {
+  #swiper-slider .slide-3 {
+    background: url("../img/banner-3-xs.jpg");
+    background-size: cover;
+    background-position: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #swiper-slider .slide-3 {
+    background: url("../img/banner-3-xs.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 #swiper-slider .slide-4 {
   background: url("../img/banner-4.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  #swiper-slider .slide-4 {
+    background: url("../img/banner-4-xs.jpg");
+    background-size: cover;
+    background-position: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #swiper-slider .slide-4 {
+    background: url("../img/banner-4-xs.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 #header {
@@ -695,6 +759,166 @@ html {
   z-index: 9;
 }
 
+@media screen and (max-width: 1200px) {
+  #search-area {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #search-area input {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  #search-area input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar a {
+    padding: 15px 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar .nav-item .nav-link {
+    padding: 15px 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar a:first-child {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #search-area {
+    padding: 15px 6px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #search-area input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #swiper-slider {
+    height: 600px;
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #swiper-slider .swiper-container {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #swiper-slider .swiper-container .swiper-wrapper {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar a {
+    padding: 6px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar a:first-child {
+    padding: 6px 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #navbar .navbar-collapse {
+    border-top: 0.15rem solid #eaeaea;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar .discover-menu::before {
+    content: "";
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 7%;
+    right: unset;
+    top: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs:before {
+    border-bottom-width: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs {
+    background-color: #007cc3;
+    padding: 6px 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs i {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs input {
+    width: 60%;
+    height: 2rem;
+    border: 2px solid #fff;
+    height: 2.5rem;
+    border-radius: 5px;
+    height: 3.5rem;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-area-xs input::-webkit-input-placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  #search-area-xs input:-ms-input-placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  #search-area-xs input::-ms-input-placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  #search-area-xs input::placeholder {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #swiper-slider {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   #navbar a {
     padding: 6px 15px;
@@ -802,138 +1026,9 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
-  #navbar a {
-    padding: 6px 15px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #navbar a:first-child {
-    padding: 6px 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #navbar .navbar-collapse {
-    border-top: 0.15rem solid #eaeaea;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #navbar .discover-menu::before {
-    content: "";
-    border-bottom: 15px solid white;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    position: absolute;
-    top: -15px;
-    left: 7%;
-    right: unset;
-    top: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #search-area-xs:before {
-    border-bottom-width: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #search-area-xs {
-    background-color: #007cc3;
-    padding: 6px 6px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #search-area-xs i {
-    color: #fff;
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #search-area-xs input {
-    width: 60%;
-    height: 2rem;
-    border: 2px solid #fff;
-    height: 2.5rem;
-    border-radius: 5px;
-    height: 3.5rem;
-    padding-bottom: 6px;
-    padding-left: 6px;
-    font-size: 1.4rem;
-    color: #fff;
-    background-color: transparent;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #search-area-xs input::-webkit-input-placeholder {
-    font-size: 1.4rem;
-    color: #fff;
-  }
-  #search-area-xs input:-ms-input-placeholder {
-    font-size: 1.4rem;
-    color: #fff;
-  }
-  #search-area-xs input::-ms-input-placeholder {
-    font-size: 1.4rem;
-    color: #fff;
-  }
-  #search-area-xs input::placeholder {
-    font-size: 1.4rem;
-    color: #fff;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #navbar a {
-    padding: 15px 15px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #navbar .nav-item .nav-link {
-    padding: 15px 15px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #navbar a:first-child {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #search-area {
-    padding: 15px 6px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #search-area input {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #search-area {
-    padding: 15px 20px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #search-area input {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1300px) {
-  #search-area input {
-    width: 80%;
+@media screen and (max-width: 576px) {
+  #swiper-slider {
+    margin-top: 60px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -25,3 +25,19 @@
         }
     }
 }
+#swiper-slider {
+    @media screen and (max-width: 992px) {
+        height: 600px;
+        margin-top: $mg-4;
+    }
+    .swiper-container {
+        @media screen and (max-width: 992px) {
+            height: 400px;
+        }
+        .swiper-wrapper {
+            @media screen and (max-width: 992px) {
+                height: 70%;
+            }
+        }
+    }
+}
