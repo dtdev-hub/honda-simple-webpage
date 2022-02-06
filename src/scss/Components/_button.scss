@@ -28,3 +28,6 @@
         border-radius: 5px;
     }
 }
+.btn-carousel {
+    @include button($color-orange, $color-orange, $color-white, $pd-1 $pd-2, $color-white, $color-orange);
+}

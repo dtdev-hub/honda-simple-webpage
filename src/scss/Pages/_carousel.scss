@@ -31,4 +31,11 @@
     .swiper-button-next {
         right: -0.8rem;
     }
+    .swiper-button-explore {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        z-index: 9;
+    }
 }
