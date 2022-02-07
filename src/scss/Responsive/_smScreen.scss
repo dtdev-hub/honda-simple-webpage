@@ -66,3 +66,18 @@
         margin-top: $mg-5;
     }
 }
+.intro {
+    .intro-container {
+        .intro-right {
+            @media screen and (max-width: 768) {
+                background-image: url(../img/our-vehicles-intro-2.jpg);
+            }
+            .intro-right-content {
+                @media screen and (max-width: 768px) {
+                    width: 40%;
+                    left: 5%;
+                }
+            }
+        }
+    }
+}

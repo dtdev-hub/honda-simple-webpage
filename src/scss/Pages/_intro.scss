@@ -1,4 +1,4 @@
-#intro {
+.intro {
     margin-top: $mg-up-3;
     .intro-container {
         padding: 0 $pd-8;
@@ -9,6 +9,7 @@
             background-size: cover;
             background-position: center center;
             background-clip: content-box;
+            margin-bottom: $mg-2;
         }
         .intro-left {
             background-color: $color-black;
@@ -34,12 +35,19 @@
             .intro-right-content {
                 color: $color-white;
                 position: absolute;
-                top: 40%;
+                top: 30%;
                 left: 5%;
                 font-size: $font-size-2;
                 width: 40%;
                 h4 {
                     font-weight: $font-weight-bold;
+                    background: $color-blue-overlay;
+                    padding: $pd-1 $pd-2;
+                    display: inline-block;
+                }
+                p {
+                    font-weight: $font-weight-bold;
+                    margin-bottom: $mg-3;
                 }
             }
         }
