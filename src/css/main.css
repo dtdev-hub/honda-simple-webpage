@@ -108,6 +108,23 @@ html {
   }
 }
 
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev {
+  left: -1.5rem;
+}
+
+.carousel-control-next {
+  right: -1.5rem;
+}
+
 .btn-vehicle {
   border: 2px solid #2198dc;
   border-radius: 40px;
@@ -223,6 +240,10 @@ html {
 .btn-build:hover {
   background-color: transparent;
   color: #007cc3;
+}
+
+.btn-caption {
+  padding: 6px 30px;
 }
 
 #img-1 {
@@ -855,6 +876,111 @@ html {
 .intro .intro-container .intro-right .intro-right-content p {
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+#our-vehicles h1 {
+  color: #00324f;
+  font-size: 6rem;
+  margin: 30px 0 60px 0;
+}
+
+#our-vehicles .carousel-control-prev i,
+#our-vehicles .carousel-control-next i {
+  font-size: 4rem;
+  background-color: rgba(0, 67, 108, 0.8);
+  padding: 20px 25px;
+  border-radius: 0.9rem;
+}
+
+#our-vehicles .carousel-indicators-config {
+  margin-bottom: 20px;
+}
+
+#our-vehicles .carousel-indicators-config li {
+  color: #00324f;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 6px 15px;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+#our-vehicles .carousel-indicators-config li.active {
+  color: #fff;
+  background-color: #2198dc;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#our-vehicles .carousel-indicators-config li.active::before {
+  content: "";
+  border-top: 15px solid #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  bottom: -35px;
+  z-index: 9;
+}
+
+#our-vehicles .carousel-caption-config {
+  width: 30%;
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+#our-vehicles .carousel-caption-config > p {
+  font-weight: bold;
+}
+
+#our-vehicles .carousel-caption-config > p span {
+  font-weight: normal;
+}
+
+#our-vehicles .carousel-caption-config img {
+  width: 60%;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+
+#our-vehicles .carousel-caption-config .caption-content {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#our-vehicles .carousel-caption-config .carousel-caption-detail {
+  margin-bottom: 30px;
+}
+
+#our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content h2 {
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+#our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#our-vehicles .carousel-caption-footer {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 0.15rem solid #eaeaea;
+}
+
+#our-vehicles .carousel-caption-footer a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {

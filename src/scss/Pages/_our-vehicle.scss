@@ -1,0 +1,90 @@
+#our-vehicles {
+    h1 {
+        color: $color-dark-blue-200;
+        font-size: $font-size-4;
+        margin: $mg-3 0 $mg-5 0;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        i {
+            font-size: $font-size-5;
+            background-color: $color-blue-overlay;
+            padding: $pd-3 $pd-4;
+            border-radius: 0.9rem;
+        }
+    }
+    .carousel-indicators-config {
+        margin-bottom: $mg-2;
+        li {
+            color: $color-dark-blue-200;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-1;
+            padding: $pd-1 $pd-2;
+            border-radius: 4rem;
+            cursor: pointer;
+        }
+        li.active {
+            color: $color-white;
+            background-color: $color-blue-200;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            &::before {
+                content: "";
+                border-top: $arrow-width solid $color-white;
+                border-left: $arrow-width solid transparent;
+                border-right: $arrow-width solid transparent;
+                position: absolute;
+                bottom: ($arrow-width * (-1)) - $mg-2;
+                z-index: 9;
+            }
+        }
+    }
+    .carousel-caption-config {
+        width: 30%;
+        position: absolute;
+        top: 8%;
+        left: 6%;
+        color: $color-white;
+        font-size: $font-size-1;
+        > p {
+            font-weight: $font-weight-bold;
+            span {
+                font-weight: $font-weight-normal;
+            }
+        }
+        img {
+            width: 60%;
+            transform: translateX($pd-2 * (-1));
+        }
+        .caption-content {
+            font-weight: $font-weight-300;
+            margin-bottom: $mg-3;
+        }
+        .carousel-caption-detail {
+            margin-bottom: $mg-3;
+            .carousel-detail-content {
+                h2 {
+                    font-weight: $font-weight-300;
+                    font-size: $font-size-5;
+                }
+                p {
+                    font-size: $font-size-1;
+                    font-weight: $font-weight-bold;
+                }
+            }
+        }
+    }
+    .carousel-caption-footer {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: $border-2;
+        a {
+            font-size: $font-size-1;
+            font-weight: $font-weight-bold;
+            color: $color-white;
+        }
+    }
+}

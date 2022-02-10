@@ -37,3 +37,6 @@
 .btn-build {
     @include button($color-white, $color-blue-200, $color-white, $pd-1 $pd-2, transparent, $color-blue-100);
 }
+.btn-caption {
+    padding: $pd-1 $pd-5;
+}
