@@ -39,4 +39,8 @@
 }
 .btn-caption {
     padding: $pd-1 $pd-5;
+    @media screen and (max-width: 576px) {
+        font-size: $font-size-1 - 0.2;
+        padding: $pd-1 $pd-3;
+    }
 }

@@ -246,6 +246,13 @@ html {
   padding: 6px 30px;
 }
 
+@media screen and (max-width: 576px) {
+  .btn-caption {
+    font-size: 1.2rem;
+    padding: 6px 20px;
+  }
+}
+
 #img-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f5f5f5), to(#f5f5f5));
   background: linear-gradient(#bbbdc0, #f5f5f5, #f5f5f5);
@@ -1279,6 +1286,42 @@ html {
 @media screen and (max-width: 576px) {
   #swiper-slider {
     margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #our-vehicles .carousel-caption-config {
+    width: 60%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    bottom: 0;
+    top: unset;
+    font-size: 1.2rem;
+  }
+  #our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content h2 {
+    font-size: 2.4rem;
+  }
+  #our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content p {
+    font-size: 1.4rem;
+  }
+  #our-vehicles .carousel-caption-footer {
+    width: 100%;
+    border: none;
+    bottom: 2%;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .carousel-control-prev {
+    left: 0rem;
+  }
+  .carousel-control-prev i {
+    font-size: 2.4rem;
+    padding: 15px;
+  }
+  .carousel-control-next {
+    right: 0rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
