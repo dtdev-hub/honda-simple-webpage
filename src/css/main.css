@@ -990,6 +990,59 @@ html {
   color: #fff;
 }
 
+#our-vehicles .carousel-indicators-xs {
+  width: 60%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+
+#our-vehicles .carousel-indicators-xs .indicators-xs-header {
+  padding: 0 15px;
+}
+
+#our-vehicles .carousel-indicators-xs h1 {
+  font-size: 1.2rem;
+  margin: 5px;
+  margin-right: auto;
+  color: #007cc3;
+  font-weight: 300;
+  padding: 15px 0;
+}
+
+#our-vehicles .carousel-indicators-xs h1 span {
+  font-weight: bold;
+  color: #00324f;
+}
+
+#our-vehicles .carousel-indicators-xs i {
+  font-size: 4rem;
+  color: #007cc3;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-vehicles .carousel-indicators-xs ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid #eaeaea;
+  display: none;
+}
+
+#our-vehicles .carousel-indicators-xs ol li {
+  color: #00324f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.transform-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 @media screen and (max-width: 1200px) {
   #search-area {
     padding: 15px 20px;
@@ -1322,6 +1375,18 @@ html {
   }
   .carousel-control-next {
     right: 0rem;
+  }
+  #our-vehicles h1 {
+    font-size: 4rem;
+  }
+  #our-vehicles .carousel-indicators-xs {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 9;
+  }
+  #our-vehicles .carousel-inner {
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */

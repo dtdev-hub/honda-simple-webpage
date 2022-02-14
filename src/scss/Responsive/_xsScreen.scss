@@ -127,4 +127,18 @@
     .carousel-control-next {
         right: 0rem;
     }
+    #our-vehicles {
+        h1 {
+            font-size: $font-size-5;
+        }
+        .carousel-indicators-xs {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            z-index: 9;
+        }
+        .carousel-inner {
+            margin-top: $mg-3;
+        }
+    }
 }
