@@ -28,3 +28,22 @@
         }
     }
 }
+@for $stt from 1 through 5 {
+    .carousel-inner {
+        .item-#{$stt} {
+            background: url("../img/slider-#{$stt}.jpg");
+            background-size: cover;
+            background-position: center center;
+            @media screen and (max-width: 768px) {
+                background: url("../img/slider-#{$stt}-xs.jpg");
+                background-size: cover;
+                background-position: unset;
+            }
+            @media screen and (max-width: 576px) {
+                background: url("../img/slider-#{$stt}-xs.jpg");
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+    }
+}

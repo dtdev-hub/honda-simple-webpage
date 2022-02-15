@@ -746,7 +746,7 @@
     <section id="our-vehicles">
         <h1 class="display-1 text-center">Our Vehicles</h1>
         <div class="carousel slide" data-ride="carousel" id="our-vehicles-slider">
-            <ol class="carousel-indicators-config d-none d-md-flex list-unstyled justify-content-around w-50 mx-auto">
+            <ol class="carousel-indicators-config d-none d-md-flex list-unstyled justify-content-around w-75 mx-auto">
                 <li class="active" data-slide-to="0" data-target="#our-vehicles-slider">CARS</li>
                 <li data-slide-to="1" data-target="#our-vehicles-slider">CROSSOVER & SUV</li>
                 <li data-slide-to="2" data-target="#our-vehicles-slider">MINIVAN & TRUCK</li>
@@ -770,9 +770,7 @@
                 </ol>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./src/img/slider-1.jpg" alt="" class="d-none d-md-block img-fluid">
-                    <img src="./src/img/slider-1-xs.jpg" alt="" class="d-block d-md-none img-fluid">
+                <div class="carousel-item active item-1">
                     <div class="carousel-caption-config">
                         <p>
                             CARS 1
@@ -799,12 +797,10 @@
                     </div>
                     <div class="carousel-caption-footer d-flex justify-content-around align-items-center">
                         <a href="#">EXPLORE THE ACCORD FAMILY ></a>
-                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="d-fluid d-none d-lg-block">
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./src/img/slider-2.jpg" alt="" class="d-none d-md-block img-fluid">
-                    <img src="./src/img/slider-2-xs.jpg" alt="" class="d-block d-md-none img-fluid">
+                <div class="carousel-item item-2">
                     <div class="carousel-caption-config">
                         <p>
                             CARS 1
@@ -831,12 +827,10 @@
                     </div>
                     <div class="carousel-caption-footer d-flex justify-content-around align-items-center">
                         <a href="#">EXPLORE THE ACCORD FAMILY ></a>
-                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="d-fluid d-none d-lg-block">
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./src/img/slider-3.jpg" alt="" class="d-none d-md-block img-fluid">
-                    <img src="./src/img/slider-3-xs.jpg" alt="" class="d-block d-md-none img-fluid">
+                <div class="carousel-item item-3">
                     <div class="carousel-caption-config">
                         <p>
                             CARS 1
@@ -863,12 +857,10 @@
                     </div>
                     <div class="carousel-caption-footer d-flex justify-content-around align-items-center">
                         <a href="#">EXPLORE THE ACCORD FAMILY ></a>
-                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="d-fluid d-none d-lg-block">
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./src/img/slider-4.jpg" alt="" class="d-none d-md-block img-fluid">
-                    <img src="./src/img/slider-4-xs.jpg" alt="" class="d-block d-md-none img-fluid">
+                <div class="carousel-item item-4">
                     <div class="carousel-caption-config">
                         <p>
                             CARS 1
@@ -895,12 +887,10 @@
                     </div>
                     <div class="carousel-caption-footer d-flex justify-content-around align-items-center">
                         <a href="#">EXPLORE THE ACCORD FAMILY ></a>
-                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="d-fluid d-none d-lg-block">
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./src/img/slider-5.jpg" alt="" class="d-none d-md-block img-fluid">
-                    <img src="./src/img/slider-5-xs.jpg" alt="" class="d-block d-md-none img-fluid">
+                <div class="carousel-item item-5">
                     <div class="carousel-caption-config">
                         <p>
                             CARS 1
@@ -927,7 +917,7 @@
                     </div>
                     <div class="carousel-caption-footer d-flex justify-content-around align-items-center">
                         <a href="#">EXPLORE THE ACCORD FAMILY ></a>
-                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                        <img src="./src/img/accord-family-vehicles-2x.png" alt="" class="d-fluid d-none d-lg-block">
                     </div>
                 </div>
             </div>
@@ -1059,6 +1049,35 @@
         $('.carousel-indicators-xs ol li').click(function () {
             $('.indicators-title span').html($(this).html());
             $('.carousel-indicators-xs ol').slideUp();
+        })
+        var count = 0;
+        $('.carousel-control-prev').click(function () {
+            $('.carousel-indicators-config li').removeClass('active')
+            if (count == 0) {
+                count = 4;
+            } else {
+                count--;
+            }
+            $('.carousel-indicators-config li').each(function (i) {
+                if (i == count) {
+                    $(this).addClass('active');
+                    $('.indicators-title span').html($(this).html())
+                }
+            })
+        })
+        $('.carousel-control-next').click(function () {
+            $('.carousel-indicators-config li').removeClass('active')
+            if (count == 4) {
+                count = 0;
+            } else {
+                count++;
+            }
+            $('.carousel-indicators-config li').each(function (i) {
+                if (i == count) {
+                    $(this).addClass('active');
+                    $('.indicators-title span').html($(this).html())
+                }
+            })
         })
     </script>
 

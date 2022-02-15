@@ -1,4 +1,11 @@
 #our-vehicles {
+    .carousel {
+        height: 600px;
+    }
+    .carousel-inner,
+    .carousel-item {
+        height: 95%;
+    }
     h1 {
         color: $color-dark-blue-200;
         font-size: $font-size-4;
@@ -130,4 +137,7 @@
 }
 .transform-rotate {
     transform: rotate(180deg);
+}
+.d-fluid {
+    max-width: 100%;
 }
