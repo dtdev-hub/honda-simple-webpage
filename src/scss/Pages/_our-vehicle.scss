@@ -134,10 +134,38 @@
             cursor: pointer;
         }
     }
+    .function-container {
+        padding: 0 $pd-8 + 1;
+        margin: $mg-6 0;
+    }
+    .function {
+        height: 300px;
+        box-shadow: $box-shadow-2;
+        h3 {
+            font-size: $font-size-2;
+            @include text($font-weight-bold, $mg-1);
+            color: $color-dark-blue-200;
+        }
+        p {
+            font-size: $font-size-1;
+            @include text($font-weight-300, $mg-2);
+            color: $color-dark-blue-100;
+            padding: 0 10%;
+        }
+        div {
+            position: absolute;
+            text-align: center;
+            top: 40%;
+            left: 0;
+        }
+    }
 }
 .transform-rotate {
     transform: rotate(180deg);
 }
 .d-fluid {
     max-width: 100%;
+}
+.pd-col {
+    padding: $pd-1;
 }

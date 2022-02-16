@@ -8,3 +8,15 @@
     left: $left;
     right: $right;
 }
+@mixin text($weight, $margin) {
+    font-weight: $weight;
+    margin: $margin;
+}
+@mixin section-padding {
+    padding: 0 $pd-8;
+}
+@mixin text2($ftz, $fw, $color) {
+    font-size: $ftz;
+    font-weight: $fw;
+    color: $color;
+}

@@ -1,0 +1,13 @@
+#services {
+    padding: $pd-8 $pd-7;
+    .service-item {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 10%;
+        p {
+            @include text2($font-size-2, $font-weight-bold, $color-dark-blue-1);
+            margin-bottom: $mg-5;
+        }
+    }
+}

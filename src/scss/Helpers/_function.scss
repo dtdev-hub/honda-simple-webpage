@@ -47,3 +47,19 @@
         }
     }
 }
+
+@each $id in (1, 2, 3, 4) {
+    .services-item-#{$id} {
+        background-image: url(../img/item-#{$id}.jpg);
+        background-position: center 0;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+        box-shadow: $box-shadow-1;
+        transition: all 0.5s;
+        background-repeat: no-repeat;
+        &:hover {
+            transform: translateY(-15px);
+        }
+    }
+}
