@@ -1,0 +1,40 @@
+#guide {
+    padding: $pd-6 $pd-7 $pd-8;
+    color: $color-white;
+    text-align: center;
+    .guide-left {
+        position: relative;
+        background-image: url(../img/intro-3.jpg);
+        height: 370px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .guide-right {
+        position: relative;
+        background-image: url(../img/intro-4.jpg);
+        height: 370px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .guide-left-content,
+    .guide-right-content {
+        width: 60%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        p {
+            @include text2($font-size-1, $font-weight-normal, $color-white);
+        }
+        h3 {
+            @include text2($font-size-3, $font-weight-bold, $color-white);
+        }
+        .btn-go {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}

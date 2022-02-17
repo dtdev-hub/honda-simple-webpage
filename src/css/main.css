@@ -973,6 +973,59 @@ html {
   margin-bottom: 60px;
 }
 
+#guide {
+  padding: 50px 10% 5%;
+  color: #fff;
+  text-align: center;
+}
+
+#guide .guide-left {
+  position: relative;
+  background-image: url(../img/intro-3.jpg);
+  height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#guide .guide-right {
+  position: relative;
+  background-image: url(../img/intro-4.jpg);
+  height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#guide .guide-left-content,
+#guide .guide-right-content {
+  width: 60%;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#guide .guide-left-content p,
+#guide .guide-right-content p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+#guide .guide-left-content h3,
+#guide .guide-right-content h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#guide .guide-left-content .btn-go:hover,
+#guide .guide-right-content .btn-go:hover {
+  background-color: transparent;
+}
+
 #swiper-slider {
   height: 750px;
   margin-top: 60px;
