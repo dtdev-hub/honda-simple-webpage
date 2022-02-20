@@ -63,3 +63,16 @@
         }
     }
 }
+
+@each $id in (1, 2, 3, 4, 5) {
+    .discover-items-#{$id} {
+        background-image: url(../img/discover-#{$id}.jpg);
+        height: 450px;
+        background-position: center -40px;
+        position: relative;
+        box-shadow: $box-shadow-1;
+        margin-bottom: $mg-5;
+        background-color: $color-white;
+        background-repeat: no-repeat;
+    }
+}

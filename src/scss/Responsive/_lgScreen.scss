@@ -1,13 +1,283 @@
-#search-area {
-    @media screen and(max-width: 1200px) {
-        padding: $pd-2 $pd-3;
+#header {
+    button.navbar-toggler {
+        outline: none;
     }
-    input {
-        @media screen and(max-width: 1200px) {
-            width: 80%;
+    @media screen and (max-width: 1000px) {
+        .honda-navbar .navbar-content .navbar-nav .nav-item .nav-link {
+            font-size: $font-size-1 - 0.1;
         }
-        @media screen and(min-width: 1200px) and(max-width:1300px) {
+        .xs-button {
+            color: white;
+            &::after {
+                content: "";
+                width: 20px;
+                height: 5px;
+                background-color: white;
+                position: absolute;
+                transition: all 0.5s;
+                top: 28px;
+            }
+            &::before {
+                content: "";
+                width: 20px;
+                height: 5px;
+                background-color: white;
+                position: absolute;
+                top: 18px;
+                transition: all 0.5s;
+            }
+        }
+        button.navbar-toggler.rotate {
+            .xs-button::after {
+                transform: rotate(30deg);
+                top: 22px;
+            }
+            .xs-button::before {
+                transform: rotate(-30deg);
+                top: 22px;
+            }
+        }
+        .lg-marker {
+            color: $color-white;
+            margin-left: auto;
+            font-size: $font-size-3;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #header-menu-lg {
+        height: 100vh;
+        position: fixed;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        background-color: $color-white-background-1;
+        animation-duration: 0.5s;
+        z-index: 20;
+        ul {
+            animation-duration: 0.5s;
+            li {
+                display: flex;
+                margin: 0 $mg-4;
+                @include text2($font-size-1, $font-weight-500, $color-dark-blue-1);
+                justify-content: space-between;
+                padding: $pd-3 0;
+                border-bottom: $border-2;
+                align-items: center;
+                cursor: pointer;
+                i {
+                    font-size: $font-size-3;
+                }
+                .language {
+                    font-size: $font-size-1;
+                    .btn-go,
+                    .btn-build {
+                        padding: 0 $pd-2;
+                    }
+                    button {
+                        margin-left: $mg-1;
+                    }
+                }
+            }
+            .last-li {
+                border-color: transparent;
+            }
+        }
+        .footer-search-field {
+            width: 60%;
+            background-color: $color-white;
+            margin: $mg-5 auto;
+            input {
+                padding: $pd-1 0;
+            }
+        }
+        .vehicles-nav-lg {
+            animation-duration: 0.5s;
+        }
+        .header-nav {
+            background-color: $color-white;
+            @include text2($font-size-1, $font-weight-bold, $color-blue-2);
+            padding: $pd-2 $pd-5;
+            span {
+                display: inline-block;
+                text-align: center;
+                margin: auto;
+            }
+        }
+        .back {
+            font-size: $font-size-2 + 0.4;
+        }
+        #vehicles-section-lg {
+            .back-vehicle {
+                font-size: $font-size-3;
+            }
+            #vehicles-list-lg {
+                height: 100vh;
+                padding-bottom: $pd-9;
+                .vehicles-items {
+                    min-width: 20%;
+                    max-width: 28%;
+                    .btn-explore {
+                        margin-right: $pd-1;
+                        width: 100%;
+                    }
+                    .btn-build {
+                        margin-left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    #vehicles-section {
+        #vehicles-list {
+            .vehicles-items {
+                .btn-explore,
+                .btn-build {
+                    padding: $pd-1 - 3 $pd-2;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #intro {
+        .intro-item-1 {
+            .intro-item-content {
+                width: 90%;
+            }
+        }
+        .intro-item-2 {
+            .intro-item-content {
+                position: absolute;
+                bottom: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60%;
+                p {
+                    @include text2($font-size-3, $font-weight-bold, $color-white);
+                }
+            }
+            .overlay-intro {
+                width: 100%;
+                background-color: $color-dark-blue-3;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #our-vehicles {
+        h1 {
+            font-size: $font-size-4 - 1.5;
+        }
+        .carousel-indicators-config {
+            .carousel-indicators {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #our-vehicles {
+        .carousel-indicators-config {
+            .carousel-indicators {
+                width: 80%;
+            }
+        }
+        .our-vehicles-inner {
+            .item-content {
+                .item-content-top {
+                    width: 49%;
+                    p {
+                        margin-bottom: $mg-4;
+                    }
+                    .vehicle-value {
+                        .price,
+                        .rating {
+                            p {
+                                font-size: $font-size-5 - 1.5;
+                                margin-right: $mg-5;
+                            }
+                        }
+                    }
+                }
+                .item-content-bottom {
+                    border-top-color: transparent;
+                    width: 60%;
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #services {
+        padding: $pd-6 $pd-7;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #guide {
+        padding-bottom: $pd-6;
+        .guide-left {
+            margin-bottom: $mg-4;
+        }
+        .guide-left-content,
+        .guide-right-content {
             width: 80%;
+            p {
+                @include text2($font-size-1, $font-weight-normal, $color-white);
+            }
+            h3 {
+                @include text2($font-size-2, $font-weight-bold, $color-white);
+            }
+            .btn-go {
+                padding: $pd-1 $pd-3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #discover {
+        padding: 0 10% $pd-8;
+        .discover-text {
+            h1 {
+                font-size: $font-size-5;
+            }
+            p {
+                font-size: $font-size-1;
+                margin-bottom: $mg-5;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #footer {
+        .footer-logo {
+            img {
+                width: 120px;
+                height: 100px;
+            }
+        }
+        .footer-contact {
+            .footer-informed {
+                .btn-explore {
+                    transform: translateX(105%);
+                }
+            }
         }
     }
 }

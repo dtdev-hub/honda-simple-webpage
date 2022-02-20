@@ -1,0 +1,50 @@
+@media screen and (max-width: 1200px) {
+    #our-vehicles {
+        .carousel-indicators-config {
+            .carousel-indicators {
+                width: 80%;
+            }
+        }
+        .our-vehicles-inner {
+            .item-content {
+                .item-content-top {
+                    width: 40%;
+                    p {
+                        margin-bottom: $mg-4;
+                    }
+                    .vehicle-value {
+                        .price,
+                        .rating {
+                            p {
+                                font-size: $font-size-5 - 1.5;
+                            }
+                        }
+                    }
+                }
+                .item-content-bottom {
+                    img {
+                        height: 65px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #discover {
+        .discover-content {
+            .discover-item-inner {
+                h3 {
+                    font-size: $font-size-1;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 1rem;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+}
