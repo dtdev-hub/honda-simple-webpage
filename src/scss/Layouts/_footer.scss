@@ -1,0 +1,142 @@
+#footer {
+    background-color: $color-white;
+    .space {
+        height: 60px;
+    }
+    .footer-logo {
+        text-align: center;
+        border-top: 5px solid $color-blue-1;
+        border-bottom: 1px solid $color-gray;
+        margin: 0 $mg-4;
+        img {
+            width: 200px;
+            height: 150px;
+        }
+    }
+    .footer-contact {
+        margin: 0 $mg-4;
+        display: flex;
+        justify-content: space-between;
+        padding: $pd-5 0;
+        align-items: center;
+        border-bottom: 1px solid $color-gray;
+        .footer-social,
+        .footer-informed {
+            p {
+                @include text2($font-size-1, $font-weight-500, $color-dark-blue-1);
+            }
+        }
+        .footer-social {
+            .social {
+                i {
+                    width: 25px;
+                    height: 25px;
+                    text-align: center;
+                    border-radius: 50%;
+                    line-height: 25px;
+                    background-color: $color-blue-1;
+                    color: $color-white;
+                    margin-right: $pd-2;
+                }
+            }
+        }
+    }
+    .footer-search-field-xs {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .footer-top {
+        display: flex;
+        padding-top: $pd-6;
+        margin: 0 $mg-4;
+        .footer-top-items {
+            width: 20%;
+            h3 {
+                @include text2($font-size-1, $font-weight-bold, $color-dark-blue-1);
+                padding-bottom: $pd-2;
+            }
+            li {
+                padding-bottom: $pd-2;
+                a {
+                    color: $color-dark-blue-1;
+                }
+            }
+        }
+    }
+    .footer-top-xs {
+        .links {
+            ul {
+                .first {
+                    border-top-color: transparent;
+                }
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: $pd-2 $pd-2 $pd-2 $pd-5;
+                    border-top: $border-2;
+                    h3 {
+                        @include text2($font-size-1, $font-weight-bold, $color-dark-blue-1);
+                    }
+                    i {
+                        font-size: $font-size-1;
+                        width: 20px;
+                        height: 20px;
+                        color: $color-blue-1;
+                        border: 1px solid $color-blue-1;
+                        border-radius: 50%;
+                        line-height: 18px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+                ul.footer-vehicles-list-xs {
+                    border-bottom: $border-2;
+                    padding: 0 $pd-3 $pd-2;
+                    li {
+                        border-color: transparent;
+                        a {
+                            color: $color-dark-blue-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: $color-blue-1;
+        color: white;
+        font-weight: 400;
+        .bottom-text-left {
+            padding: $pd-6;
+            letter-spacing: 1px;
+            a {
+                @include text2(1rem, $font-weight-500, $color-white);
+            }
+        }
+        .bottom-text-right {
+            padding: $pd-6;
+            p {
+                font-weight: 500;
+                span {
+                    margin: 0 $mg-1;
+                }
+            }
+        }
+        .bottom-partner {
+            display: flex;
+            justify-content: space-around;
+            padding: $pd-6 $pd-6;
+            img {
+                width: 100px;
+                height: 50px;
+            }
+        }
+        .bottom-cookie {
+            padding: $pd-6;
+            a {
+                @include text2(1rem, $font-weight-500, $color-white);
+            }
+        }
+    }
+}

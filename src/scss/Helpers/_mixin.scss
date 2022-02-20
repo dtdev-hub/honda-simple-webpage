@@ -31,3 +31,14 @@
         color: $color-hover;
     }
 }
+@mixin button2($bg, $b-color, $color, $pd, $bg-hover, $b-hover, $color-hover) {
+    background-color: $bg;
+    border: 2px solid $b-color;
+    color: $color;
+    padding: $pd;
+    &:hover {
+        background-color: $bg-hover;
+        border-color: $b-hover;
+        color: $color-hover;
+    }
+}
