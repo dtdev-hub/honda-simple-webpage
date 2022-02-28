@@ -156,7 +156,7 @@ $(".back-to-top").click(function () {
 		{
 			scrollTop: 0,
 		},
-		0
+		800
 	);
 });
 
