@@ -159,3 +159,8 @@ $(".back-to-top").click(function () {
 		0
 	);
 });
+
+// venobox
+new VenoBox({
+	selector: '.venobox',
+});
