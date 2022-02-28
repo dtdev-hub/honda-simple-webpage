@@ -104,6 +104,9 @@
         }
     }
     .footer-bottom {
+        .row {
+            margin: 0 !important;
+        }
         background-color: $color-blue-1;
         color: white;
         font-weight: 400;
